@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prijsberekening</title>
+	<script>
+		function calculatePrice(price, quantity) {
+			return price * quantity;
+		}
+
+		function calculate() {
+			let price = parseFloat(document.getElementById("price").value);
+			let quantity = parseInt(document.getElementById("quantity").value);
+
+			let result = calculatePrice(price, quantity);
+
+			document.getElementById("result").innerHTML = "De totaalprijs is: " + result.toFixed(2);
+		}
+	</script>
+</head>
+<body>
+	<h1>Prijsberekening</h1>
+	<label for="price">Prijs per stuk:</label>
+	<input type="text" id="price" name="price"><br><br>
+	<label for="quantity">Aantal:</label>
+	<input type="text" id="quantity" name="quantity"><br><br>
+	<button onclick="calculate()">Bereken totaalprijs</button><br><br>
+	<div id="result"></div>
+</body>
+</html>
