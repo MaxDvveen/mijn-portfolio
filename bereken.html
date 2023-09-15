@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<h1>Calculator</h1>
+
+	<script>
+
+		let getal1 = parseFloat(prompt("Voer het eerste getal in:"));
+
+
+		let getal2 = parseFloat(prompt("Voer het tweede getal in:"));
+
+		document.body.style.backgroundColor = "lightgrey";
+
+		let sum = getal1 + getal2;
+		document.write(getal1 + " + " + getal2 + " = " + sum + "<br>");
+
+
+		let difference = getal1 - getal2;
+		document.write(getal1 + " - " + getal2 + " = " + difference + "<br>");
+
+
+		let product = getal1 * getal2;
+		document.write(getal1 + " * " + getal2 + " = " + product + "<br>");
+
+		let quotient = getal1 / getal2;
+		document.write(getal1 + " / " + getal2 + " = " + quotient);
+	</script>
+</body>
+</html>

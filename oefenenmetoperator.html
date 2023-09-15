@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator Example</title>
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculator Example</h1>
+    
+    <script>
+      let getal = prompt("Voer een getal in:");
+      
+      let sum = parseFloat(getal) + 10;
+      let difference = parseFloat(getal) - 5;
+      let product = parseFloat(getal) * 3;
+      let quotient = parseFloat(getal) / 2;
+      
+      document.write("<p>Getal + 10 = " + sum + "</p>");
+      document.write("<p>Getal - 5 = " + difference + "</p>");
+      document.write("<p>Getal * 3 = " + product + "</p>");
+      document.write("<p>Getal / 2 = " + quotient + "</p>");
+      
+      sum += 5;
+      difference -= 3;
+      product *= 2;
+      quotient /= 3;
+      
+      document.write("<p>Getal + 10 + 5 = " + sum + "</p>");
+      document.write("<p>Getal - 5 - 3 = " + difference + "</p>");
+      document.write("<p>Getal * 3 * 2 = " + product + "</p>");
+      document.write("<p>Getal / 2 / 3 = " + quotient + "</p>");
+    </script>
+  </body>
+</html>
