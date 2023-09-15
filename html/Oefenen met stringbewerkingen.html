@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Naam Invoer Voorbeeld</title>
+    <style>
+      body {
+        background-color: #e0ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let naam = prompt("Voer je volledige naam in:");
+
+      let greeting = "Hallo, " + naam;
+
+      document.write("<p>" + greeting + "</p>");
+
+  
+      let naamLengte = naam.replace(/\s+/g, '').length;
+
+      document.write("<p>De lengte van je naam is " + naamLengte + " tekens.</p>");
+
+      let naamArray = naam.split(" ");
+      let voornaam = naamArray[0];
+      let achternaam = naamArray[naamArray.length-1];
+
+    
+      document.write("<p>Je voornaam is " + voornaam + " en je achternaam is " + achternaam + ".</p>");
+    </script>
+  </body>
+</html>

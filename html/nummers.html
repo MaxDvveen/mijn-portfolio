@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array voorbeeld</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Array voorbeeld</h1>
+  <p id="lengte"></p>
+  <p id="eerste"></p>
+  <p id="laatste"></p>
+
+  <script>
+    var nummers = [1, 4, 3, 12, 123];
+    var lengteElement = document.getElementById("lengte");
+    lengteElement.innerText = "Lengte van nummers: " + nummers.length;
+
+    var eersteElement = document.getElementById("eerste");
+    eersteElement.innerText = "Eerste element: " + nummers[0];
+
+    var laatsteElement = document.getElementById("laatste");
+    laatsteElement.innerText = "Laatste element: " + nummers[nummers.length - 1];
+  </script>
+</body>
+</html>
